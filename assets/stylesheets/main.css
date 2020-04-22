@@ -1,0 +1,297 @@
+/*Browser Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*----------------------
+        Home Page
+----------------------*/
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 80px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.narrow_section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page_section {
+  height: 540px;
+  background-color: #fff;
+}
+
+.first_section {
+  
+  background: #fff url("../backgrounds/handfuls_of_pine_needles_1.jpeg") top left no-repeat;
+  background-size: 100%;
+  color: #fff;
+}
+
+.third_section {
+  background: #fff url("../backgrounds/ferns.jpg") top left no-repeat;
+  background-size: 100%;
+}
+
+.vertical_align {
+  display: flex; 
+  align-items: center;
+}
+
+header {
+  background-color: #01546B;
+  height: 60px;
+}
+
+header h3 {
+  float: left;
+  margin: 18px 20px; 
+}
+
+.spacer {
+  height: 50px
+}
+
+div section {
+  padding-top: 100px;
+}
+
+.narrow_section h5,
+.narrow_section h3 {
+  text-align: center;
+}
+
+.narrow_section h5 {
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+/*----------------------
+        Buttons
+----------------------*/
+
+.btn {
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+  border: solid 1px #0AC6FC;
+  background-color: #0AC6FC;
+  padding: 10px 24px;
+  margin-right: 20px;
+}
+
+.btn_secondary {
+  border: solid 1px #fff;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+/*----------------------
+        Links
+----------------------*/
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a {
+  color: #fff;
+}
+
+/*----------------------
+        Nav
+----------------------*/
+
+nav ul li {
+  display: inline-block;
+  margin: 23px 0;
+  width: 16.666%;
+  text-align: center;
+  
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  grid
+  ========================================
+*/
+.col-1-4 {
+  width: 25%;
+  display: inline-block;
+  text-align: left;
+  /*background-color: chartreuse;*/
+}
+
+.col-1-4 p {
+  padding-left: 5px;
+}
+
+.col-1-3 {
+  width: 26%;
+  display: inline-block;
+  margin: 0 1.9%;
+  margin-top: 4%;
+  padding: 0 1.6%;
+  padding-top: 2%;
+  text-align: left;
+  border: 1px solid #0AC6FC;
+}
+
+.col-1-3 p {
+  margin-bottom: 20px;
+}
+
+/*----------------------
+        Contact Bar
+----------------------*/
+
+.contact_bar {
+  background-color: #026B8A;
+  height: 140px;
+  color: #fff;
+}
+
+.contact_bar img {
+  display: inline-block;
+  height: 35px;
+  float: left;
+  padding-right: 8px;
+}
+
+.contact_bar div{
+  padding-top: 12px;
+}
+
+.contact_bar div:last-child {
+  position: relative;
+  bottom: -12px;
+}
+
+/*----------------------
+       Section Two
+----------------------*/
+
+.second_section img {
+  display: inline;
+  
+  height: 35px;
+  position: relative;
+  top: -38px;
+  left: 6px;
+  float: right;
+  
+}
+
+.second_section div h4 {
+  margin-bottom: 15px;
+}
+
+
+.second_section h4 {
+  display: inline-block;
+  
+}
+
+div.col-1-3 div{
+  width 100%;
+}
